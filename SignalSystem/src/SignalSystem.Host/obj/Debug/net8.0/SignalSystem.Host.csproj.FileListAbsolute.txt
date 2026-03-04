@@ -95,3 +95,4 @@ D:\test\SignalSystem\src\SignalSystem.Host\bin\Debug\net8.0\IronSnappy.dll
 D:\test\SignalSystem\src\SignalSystem.Host\bin\Debug\net8.0\K4os.Compression.LZ4.dll
 D:\test\SignalSystem\src\SignalSystem.Host\bin\Debug\net8.0\ICSharpCode.SharpZipLib.dll
 D:\test\SignalSystem\src\SignalSystem.Host\bin\Debug\net8.0\ZstdSharp.dll
+D:\test\SignalSystem\src\SignalSystem.Host\obj\Debug\net8.0\SignalSystem.Host.sourcelink.json

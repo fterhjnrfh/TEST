@@ -23,3 +23,4 @@ D:\test\SignalSystem\src\SignalSystem.UI\bin\Debug\net8.0\SignalSystem.Processin
 D:\test\SignalSystem\src\SignalSystem.UI\bin\Debug\net8.0\SignalSystem.SDK.Impl.dll
 D:\test\SignalSystem\src\SignalSystem.UI\bin\Debug\net8.0\SignalSystem.SDK.Impl.pdb
 D:\test\SignalSystem\src\SignalSystem.UI\bin\Debug\net8.0\SignalSystem.Processing.Impl.pdb
+D:\test\SignalSystem\src\SignalSystem.UI\obj\Debug\net8.0\SignalSystem.UI.sourcelink.json

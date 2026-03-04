@@ -15,3 +15,4 @@ D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\SignalSys
 D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\refint\SignalSystem.Processing.Impl.dll
 D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\SignalSystem.Processing.Impl.pdb
 D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\ref\SignalSystem.Processing.Impl.dll
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\SignalSystem.Processing.Impl.sourcelink.json

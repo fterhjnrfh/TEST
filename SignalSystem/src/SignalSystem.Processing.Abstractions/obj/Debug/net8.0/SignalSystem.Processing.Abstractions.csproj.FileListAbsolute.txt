@@ -13,3 +13,4 @@ D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\S
 D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\refint\SignalSystem.Processing.Abstractions.dll
 D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\SignalSystem.Processing.Abstractions.pdb
 D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\ref\SignalSystem.Processing.Abstractions.dll
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\SignalSystem.Processing.Abstractions.sourcelink.json

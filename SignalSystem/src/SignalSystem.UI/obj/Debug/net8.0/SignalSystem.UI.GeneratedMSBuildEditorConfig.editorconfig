@@ -15,21 +15,21 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SignalSystem.UI
-build_property.ProjectDir = d:\test\SignalSystem\src\SignalSystem.UI\
+build_property.ProjectDir = D:\test\SignalSystem\src\SignalSystem.UI\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[d:/test/SignalSystem/src/SignalSystem.UI/App.axaml]
+[D:/test/SignalSystem/src/SignalSystem.UI/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[d:/test/SignalSystem/src/SignalSystem.UI/Views/DataViewerView.axaml]
+[D:/test/SignalSystem/src/SignalSystem.UI/Views/DataViewerView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[d:/test/SignalSystem/src/SignalSystem.UI/Views/MainWindow.axaml]
+[D:/test/SignalSystem/src/SignalSystem.UI/Views/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[d:/test/SignalSystem/src/SignalSystem.UI/Views/SignalProcessingView.axaml]
+[D:/test/SignalSystem/src/SignalSystem.UI/Views/SignalProcessingView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[d:/test/SignalSystem/src/SignalSystem.UI/Views/SignalSourceView.axaml]
+[D:/test/SignalSystem/src/SignalSystem.UI/Views/SignalSourceView.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

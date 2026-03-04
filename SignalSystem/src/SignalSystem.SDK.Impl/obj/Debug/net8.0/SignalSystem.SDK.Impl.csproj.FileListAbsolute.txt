@@ -15,3 +15,4 @@ D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\SignalSystem.SDK
 D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\refint\SignalSystem.SDK.Impl.dll
 D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\SignalSystem.SDK.Impl.pdb
 D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\ref\SignalSystem.SDK.Impl.dll
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\SignalSystem.SDK.Impl.sourcelink.json

@@ -15,3 +15,4 @@ D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\SignalSystem.
 D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\refint\SignalSystem.Storage.Sdf.dll
 D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\SignalSystem.Storage.Sdf.pdb
 D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\ref\SignalSystem.Storage.Sdf.dll
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\SignalSystem.Storage.Sdf.sourcelink.json

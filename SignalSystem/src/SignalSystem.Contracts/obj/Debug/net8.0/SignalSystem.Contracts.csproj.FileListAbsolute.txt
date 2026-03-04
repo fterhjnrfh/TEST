@@ -9,3 +9,4 @@ D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\SignalSystem.Co
 D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\refint\SignalSystem.Contracts.dll
 D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\SignalSystem.Contracts.pdb
 D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\ref\SignalSystem.Contracts.dll
+D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\SignalSystem.Contracts.sourcelink.json
