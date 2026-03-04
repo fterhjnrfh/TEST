@@ -1,0 +1,128 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\test\\SignalSystem\\src\\SignalSystem.SDK.Abstractions\\SignalSystem.SDK.Abstractions.csproj": {}
+  },
+  "projects": {
+    "D:\\test\\SignalSystem\\src\\SignalSystem.Contracts\\SignalSystem.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\test\\SignalSystem\\src\\SignalSystem.Contracts\\SignalSystem.Contracts.csproj",
+        "projectName": "SignalSystem.Contracts",
+        "projectPath": "D:\\test\\SignalSystem\\src\\SignalSystem.Contracts\\SignalSystem.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Destiny\\.nuget\\packages\\",
+        "outputPath": "D:\\test\\SignalSystem\\src\\SignalSystem.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Destiny\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\test\\SignalSystem\\src\\SignalSystem.SDK.Abstractions\\SignalSystem.SDK.Abstractions.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\test\\SignalSystem\\src\\SignalSystem.SDK.Abstractions\\SignalSystem.SDK.Abstractions.csproj",
+        "projectName": "SignalSystem.SDK.Abstractions",
+        "projectPath": "D:\\test\\SignalSystem\\src\\SignalSystem.SDK.Abstractions\\SignalSystem.SDK.Abstractions.csproj",
+        "packagesPath": "C:\\Users\\Destiny\\.nuget\\packages\\",
+        "outputPath": "D:\\test\\SignalSystem\\src\\SignalSystem.SDK.Abstractions\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Destiny\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\test\\SignalSystem\\src\\SignalSystem.Contracts\\SignalSystem.Contracts.csproj": {
+                "projectPath": "D:\\test\\SignalSystem\\src\\SignalSystem.Contracts\\SignalSystem.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

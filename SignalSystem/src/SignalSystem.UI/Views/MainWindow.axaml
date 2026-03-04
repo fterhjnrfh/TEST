@@ -1,0 +1,52 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:SignalSystem.UI.ViewModels"
+        xmlns:views="using:SignalSystem.UI.Views"
+        x:Class="SignalSystem.UI.Views.MainWindow"
+        Title="信号采集与无损压缩存储系统"
+        Width="1100" Height="700"
+        WindowStartupLocation="CenterScreen">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+
+    <DockPanel>
+        <!-- 底部状态栏 -->
+        <Border DockPanel.Dock="Bottom" Background="#F0F0F0" Padding="8,4">
+            <Grid ColumnDefinitions="*,Auto">
+                <TextBlock Text="{Binding StatusText}" VerticalAlignment="Center" />
+                <TextBlock Grid.Column="1" Text="v1.0.0" Opacity="0.5" VerticalAlignment="Center" />
+            </Grid>
+        </Border>
+
+        <!-- 左侧导航 -->
+        <Border DockPanel.Dock="Left" Width="180" Background="#E8EDF2" Padding="0,8">
+            <StackPanel Spacing="4">
+                <TextBlock Text="模块导航" FontWeight="Bold" Margin="12,4,12,8" />
+                <ListBox SelectedIndex="{Binding SelectedNavIndex}" Margin="4,0">
+                    <ListBoxItem Content="📡  数据源" />
+                    <ListBoxItem Content="⚙️  信号处理" />
+                    <ListBoxItem Content="📊  数据查看" />
+                </ListBox>
+            </StackPanel>
+        </Border>
+
+        <!-- 右侧内容区 -->
+        <Border Padding="12">
+            <ContentControl Content="{Binding CurrentPage}">
+                <ContentControl.DataTemplates>
+                    <DataTemplate DataType="vm:SignalSourceViewModel">
+                        <views:SignalSourceView />
+                    </DataTemplate>
+                    <DataTemplate DataType="vm:SignalProcessingViewModel">
+                        <views:SignalProcessingView />
+                    </DataTemplate>
+                    <DataTemplate DataType="vm:DataViewerViewModel">
+                        <views:DataViewerView />
+                    </DataTemplate>
+                </ContentControl.DataTemplates>
+            </ContentControl>
+        </Border>
+    </DockPanel>
+</Window>

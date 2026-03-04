@@ -1,0 +1,17 @@
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\bin\Debug\net8.0\SignalSystem.SDK.Impl.deps.json
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\bin\Debug\net8.0\SignalSystem.SDK.Impl.dll
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\bin\Debug\net8.0\SignalSystem.SDK.Impl.pdb
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\bin\Debug\net8.0\SignalSystem.Contracts.dll
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\bin\Debug\net8.0\SignalSystem.SDK.Abstractions.dll
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\bin\Debug\net8.0\SignalSystem.Contracts.pdb
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\bin\Debug\net8.0\SignalSystem.SDK.Abstractions.pdb
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\SignalSystem.SDK.Impl.csproj.AssemblyReference.cache
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\SignalSystem.SDK.Impl.GeneratedMSBuildEditorConfig.editorconfig
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\SignalSystem.SDK.Impl.AssemblyInfoInputs.cache
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\SignalSystem.SDK.Impl.AssemblyInfo.cs
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\SignalSystem.SDK.Impl.csproj.CoreCompileInputs.cache
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\SignalSy.C3C5A748.Up2Date
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\SignalSystem.SDK.Impl.dll
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\refint\SignalSystem.SDK.Impl.dll
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\SignalSystem.SDK.Impl.pdb
+D:\test\SignalSystem\src\SignalSystem.SDK.Impl\obj\Debug\net8.0\ref\SignalSystem.SDK.Impl.dll

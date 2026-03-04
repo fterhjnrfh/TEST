@@ -1,0 +1,17 @@
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\bin\Debug\net8.0\SignalSystem.Processing.Impl.deps.json
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\bin\Debug\net8.0\SignalSystem.Processing.Impl.dll
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\bin\Debug\net8.0\SignalSystem.Processing.Impl.pdb
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\bin\Debug\net8.0\SignalSystem.Contracts.dll
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\bin\Debug\net8.0\SignalSystem.Processing.Abstractions.dll
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\bin\Debug\net8.0\SignalSystem.Contracts.pdb
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\bin\Debug\net8.0\SignalSystem.Processing.Abstractions.pdb
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\SignalSystem.Processing.Impl.csproj.AssemblyReference.cache
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\SignalSystem.Processing.Impl.GeneratedMSBuildEditorConfig.editorconfig
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\SignalSystem.Processing.Impl.AssemblyInfoInputs.cache
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\SignalSystem.Processing.Impl.AssemblyInfo.cs
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\SignalSystem.Processing.Impl.csproj.CoreCompileInputs.cache
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\SignalSy.F4EB5164.Up2Date
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\SignalSystem.Processing.Impl.dll
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\refint\SignalSystem.Processing.Impl.dll
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\SignalSystem.Processing.Impl.pdb
+D:\test\SignalSystem\src\SignalSystem.Processing.Impl\obj\Debug\net8.0\ref\SignalSystem.Processing.Impl.dll

@@ -1,0 +1,17 @@
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\bin\Debug\net8.0\SignalSystem.Storage.Sdf.deps.json
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\bin\Debug\net8.0\SignalSystem.Storage.Sdf.dll
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\bin\Debug\net8.0\SignalSystem.Storage.Sdf.pdb
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\bin\Debug\net8.0\SignalSystem.Contracts.dll
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\bin\Debug\net8.0\SignalSystem.Processing.Abstractions.dll
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\bin\Debug\net8.0\SignalSystem.Contracts.pdb
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\bin\Debug\net8.0\SignalSystem.Processing.Abstractions.pdb
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\SignalSystem.Storage.Sdf.csproj.AssemblyReference.cache
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\SignalSystem.Storage.Sdf.GeneratedMSBuildEditorConfig.editorconfig
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\SignalSystem.Storage.Sdf.AssemblyInfoInputs.cache
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\SignalSystem.Storage.Sdf.AssemblyInfo.cs
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\SignalSystem.Storage.Sdf.csproj.CoreCompileInputs.cache
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\SignalSy.04C328D3.Up2Date
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\SignalSystem.Storage.Sdf.dll
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\refint\SignalSystem.Storage.Sdf.dll
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\SignalSystem.Storage.Sdf.pdb
+D:\test\SignalSystem\src\SignalSystem.Storage.Sdf\obj\Debug\net8.0\ref\SignalSystem.Storage.Sdf.dll

@@ -1,0 +1,116 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "SignalSystem.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/SignalSystem.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SignalSystem.Contracts.dll": {}
+        }
+      },
+      "SignalSystem.SDK.Abstractions/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "SignalSystem.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SignalSystem.SDK.Abstractions.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SignalSystem.SDK.Abstractions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SignalSystem.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../SignalSystem.Contracts/SignalSystem.Contracts.csproj",
+      "msbuildProject": "../SignalSystem.Contracts/SignalSystem.Contracts.csproj"
+    },
+    "SignalSystem.SDK.Abstractions/1.0.0": {
+      "type": "project",
+      "path": "../SignalSystem.SDK.Abstractions/SignalSystem.SDK.Abstractions.csproj",
+      "msbuildProject": "../SignalSystem.SDK.Abstractions/SignalSystem.SDK.Abstractions.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "SignalSystem.Contracts >= 1.0.0",
+      "SignalSystem.SDK.Abstractions >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Destiny\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\test\\SignalSystem\\src\\SignalSystem.SDK.Impl\\SignalSystem.SDK.Impl.csproj",
+      "projectName": "SignalSystem.SDK.Impl",
+      "projectPath": "D:\\test\\SignalSystem\\src\\SignalSystem.SDK.Impl\\SignalSystem.SDK.Impl.csproj",
+      "packagesPath": "C:\\Users\\Destiny\\.nuget\\packages\\",
+      "outputPath": "D:\\test\\SignalSystem\\src\\SignalSystem.SDK.Impl\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Destiny\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "D:\\test\\SignalSystem\\src\\SignalSystem.Contracts\\SignalSystem.Contracts.csproj": {
+              "projectPath": "D:\\test\\SignalSystem\\src\\SignalSystem.Contracts\\SignalSystem.Contracts.csproj"
+            },
+            "D:\\test\\SignalSystem\\src\\SignalSystem.SDK.Abstractions\\SignalSystem.SDK.Abstractions.csproj": {
+              "projectPath": "D:\\test\\SignalSystem\\src\\SignalSystem.SDK.Abstractions\\SignalSystem.SDK.Abstractions.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

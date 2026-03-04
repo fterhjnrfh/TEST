@@ -1,0 +1,81 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalSystem", "SignalSystem", "{C8F55A94-E75F-5C0C-FB94-0CABAA0B69AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3F058427-F48C-81C1-633E-0BD6F542DB8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalSystem.Contracts", "SignalSystem\src\SignalSystem.Contracts\SignalSystem.Contracts.csproj", "{CF1F0C4E-008D-A9FC-3135-9743682CAFCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalSystem.Host", "SignalSystem\src\SignalSystem.Host\SignalSystem.Host.csproj", "{6CD09F4D-8079-1F90-792E-8DF0013EB58A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalSystem.Processing.Abstractions", "SignalSystem\src\SignalSystem.Processing.Abstractions\SignalSystem.Processing.Abstractions.csproj", "{B438BF41-7BE3-0690-AE92-36ED150D37C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalSystem.Processing.Impl", "SignalSystem\src\SignalSystem.Processing.Impl\SignalSystem.Processing.Impl.csproj", "{552C7961-331B-C5EF-99E7-6D9960407ECE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalSystem.SDK.Abstractions", "SignalSystem\src\SignalSystem.SDK.Abstractions\SignalSystem.SDK.Abstractions.csproj", "{159A4AED-1141-45DA-6F5F-DE695E1BD9FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalSystem.SDK.Impl", "SignalSystem\src\SignalSystem.SDK.Impl\SignalSystem.SDK.Impl.csproj", "{65A680A9-A9F6-287A-646E-FF2BBA0185FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalSystem.Storage.Sdf", "SignalSystem\src\SignalSystem.Storage.Sdf\SignalSystem.Storage.Sdf.csproj", "{C9D6C582-6D4A-4784-71A1-7B44B92710EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalSystem.UI", "SignalSystem\src\SignalSystem.UI\SignalSystem.UI.csproj", "{04734903-C9CB-35CB-0E18-0A473AF11484}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF1F0C4E-008D-A9FC-3135-9743682CAFCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF1F0C4E-008D-A9FC-3135-9743682CAFCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF1F0C4E-008D-A9FC-3135-9743682CAFCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF1F0C4E-008D-A9FC-3135-9743682CAFCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD09F4D-8079-1F90-792E-8DF0013EB58A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD09F4D-8079-1F90-792E-8DF0013EB58A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD09F4D-8079-1F90-792E-8DF0013EB58A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD09F4D-8079-1F90-792E-8DF0013EB58A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B438BF41-7BE3-0690-AE92-36ED150D37C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B438BF41-7BE3-0690-AE92-36ED150D37C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B438BF41-7BE3-0690-AE92-36ED150D37C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B438BF41-7BE3-0690-AE92-36ED150D37C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{552C7961-331B-C5EF-99E7-6D9960407ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{552C7961-331B-C5EF-99E7-6D9960407ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{552C7961-331B-C5EF-99E7-6D9960407ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{552C7961-331B-C5EF-99E7-6D9960407ECE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{159A4AED-1141-45DA-6F5F-DE695E1BD9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{159A4AED-1141-45DA-6F5F-DE695E1BD9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{159A4AED-1141-45DA-6F5F-DE695E1BD9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{159A4AED-1141-45DA-6F5F-DE695E1BD9FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65A680A9-A9F6-287A-646E-FF2BBA0185FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65A680A9-A9F6-287A-646E-FF2BBA0185FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65A680A9-A9F6-287A-646E-FF2BBA0185FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65A680A9-A9F6-287A-646E-FF2BBA0185FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9D6C582-6D4A-4784-71A1-7B44B92710EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9D6C582-6D4A-4784-71A1-7B44B92710EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9D6C582-6D4A-4784-71A1-7B44B92710EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9D6C582-6D4A-4784-71A1-7B44B92710EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04734903-C9CB-35CB-0E18-0A473AF11484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04734903-C9CB-35CB-0E18-0A473AF11484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04734903-C9CB-35CB-0E18-0A473AF11484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04734903-C9CB-35CB-0E18-0A473AF11484}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F058427-F48C-81C1-633E-0BD6F542DB8E} = {C8F55A94-E75F-5C0C-FB94-0CABAA0B69AB}
+		{CF1F0C4E-008D-A9FC-3135-9743682CAFCC} = {3F058427-F48C-81C1-633E-0BD6F542DB8E}
+		{6CD09F4D-8079-1F90-792E-8DF0013EB58A} = {3F058427-F48C-81C1-633E-0BD6F542DB8E}
+		{B438BF41-7BE3-0690-AE92-36ED150D37C3} = {3F058427-F48C-81C1-633E-0BD6F542DB8E}
+		{552C7961-331B-C5EF-99E7-6D9960407ECE} = {3F058427-F48C-81C1-633E-0BD6F542DB8E}
+		{159A4AED-1141-45DA-6F5F-DE695E1BD9FB} = {3F058427-F48C-81C1-633E-0BD6F542DB8E}
+		{65A680A9-A9F6-287A-646E-FF2BBA0185FA} = {3F058427-F48C-81C1-633E-0BD6F542DB8E}
+		{C9D6C582-6D4A-4784-71A1-7B44B92710EE} = {3F058427-F48C-81C1-633E-0BD6F542DB8E}
+		{04734903-C9CB-35CB-0E18-0A473AF11484} = {3F058427-F48C-81C1-633E-0BD6F542DB8E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AEC79649-8996-4084-A2BA-93511CE8EAA5}
+	EndGlobalSection
+EndGlobal

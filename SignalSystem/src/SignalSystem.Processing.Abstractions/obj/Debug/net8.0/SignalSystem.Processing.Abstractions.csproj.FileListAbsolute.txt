@@ -1,0 +1,15 @@
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\bin\Debug\net8.0\SignalSystem.Processing.Abstractions.deps.json
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\bin\Debug\net8.0\SignalSystem.Processing.Abstractions.dll
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\bin\Debug\net8.0\SignalSystem.Processing.Abstractions.pdb
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\bin\Debug\net8.0\SignalSystem.Contracts.dll
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\bin\Debug\net8.0\SignalSystem.Contracts.pdb
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\SignalSystem.Processing.Abstractions.csproj.AssemblyReference.cache
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\SignalSystem.Processing.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\SignalSystem.Processing.Abstractions.AssemblyInfoInputs.cache
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\SignalSystem.Processing.Abstractions.AssemblyInfo.cs
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\SignalSystem.Processing.Abstractions.csproj.CoreCompileInputs.cache
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\SignalSy.D14A80E9.Up2Date
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\SignalSystem.Processing.Abstractions.dll
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\refint\SignalSystem.Processing.Abstractions.dll
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\SignalSystem.Processing.Abstractions.pdb
+D:\test\SignalSystem\src\SignalSystem.Processing.Abstractions\obj\Debug\net8.0\ref\SignalSystem.Processing.Abstractions.dll

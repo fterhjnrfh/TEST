@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>SignalSystem.SDK.Impl</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SignalSystem.Contracts\SignalSystem.Contracts.csproj" />
+    <ProjectReference Include="..\SignalSystem.SDK.Abstractions\SignalSystem.SDK.Abstractions.csproj" />
+  </ItemGroup>
+</Project>

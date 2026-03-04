@@ -1,0 +1,10 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <!-- 若需部署到 Win7，可改为 net6.0 并安装对应 SDK -->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>SignalSystem</RootNamespace>
+  </PropertyGroup>
+</Project>

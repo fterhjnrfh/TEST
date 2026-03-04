@@ -1,0 +1,11 @@
+D:\test\SignalSystem\src\SignalSystem.Contracts\bin\Debug\net8.0\SignalSystem.Contracts.deps.json
+D:\test\SignalSystem\src\SignalSystem.Contracts\bin\Debug\net8.0\SignalSystem.Contracts.dll
+D:\test\SignalSystem\src\SignalSystem.Contracts\bin\Debug\net8.0\SignalSystem.Contracts.pdb
+D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\SignalSystem.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\SignalSystem.Contracts.AssemblyInfoInputs.cache
+D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\SignalSystem.Contracts.AssemblyInfo.cs
+D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\SignalSystem.Contracts.csproj.CoreCompileInputs.cache
+D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\SignalSystem.Contracts.dll
+D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\refint\SignalSystem.Contracts.dll
+D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\SignalSystem.Contracts.pdb
+D:\test\SignalSystem\src\SignalSystem.Contracts\obj\Debug\net8.0\ref\SignalSystem.Contracts.dll
