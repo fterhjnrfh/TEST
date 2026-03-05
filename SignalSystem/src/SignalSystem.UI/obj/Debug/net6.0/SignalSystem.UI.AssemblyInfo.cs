@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SignalSystem.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7e6c653b69d2a96a3e98f6e29d69282b57f365e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9a294de333888917a0944fc2f704115a908bf86")]
 [assembly: System.Reflection.AssemblyProductAttribute("SignalSystem.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SignalSystem.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
