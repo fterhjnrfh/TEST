@@ -1,10 +1,10 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {
+    "net6.0": {
       "SignalSystem.Contracts/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/SignalSystem.Contracts.dll": {}
         },
@@ -14,7 +14,7 @@
       },
       "SignalSystem.SDK.Abstractions/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "SignalSystem.Contracts": "1.0.0"
         },
@@ -40,7 +40,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net8.0": [
+    "net6.0": [
       "SignalSystem.Contracts >= 1.0.0",
       "SignalSystem.SDK.Abstractions >= 1.0.0"
     ]
@@ -61,14 +61,14 @@
         "C:\\Users\\Destiny\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net8.0"
+        "net6.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
             "D:\\test\\SignalSystem\\src\\SignalSystem.Contracts\\SignalSystem.Contracts.csproj": {
               "projectPath": "D:\\test\\SignalSystem\\src\\SignalSystem.Contracts\\SignalSystem.Contracts.csproj"
@@ -91,8 +91,8 @@
       }
     },
     "frameworks": {
-      "net8.0": {
-        "targetAlias": "net8.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",
@@ -104,12 +104,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.416\\RuntimeIdentifierGraph.json"
       }
     }
   }

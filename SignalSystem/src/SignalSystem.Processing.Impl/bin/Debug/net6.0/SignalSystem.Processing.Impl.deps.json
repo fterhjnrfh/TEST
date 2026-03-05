@@ -1,0 +1,131 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SignalSystem.Processing.Impl/1.0.0": {
+        "dependencies": {
+          "IronSnappy": "1.3.1",
+          "K4os.Compression.LZ4": "1.3.8",
+          "SharpZipLib": "1.4.2",
+          "SignalSystem.Contracts": "1.0.0",
+          "SignalSystem.Processing.Abstractions": "1.0.0",
+          "ZstdSharp.Port": "0.8.7"
+        },
+        "runtime": {
+          "SignalSystem.Processing.Impl.dll": {}
+        }
+      },
+      "IronSnappy/1.3.1": {
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "runtime": {
+          "lib/net6.0/IronSnappy.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.3.1.0"
+          }
+        }
+      },
+      "K4os.Compression.LZ4/1.3.8": {
+        "runtime": {
+          "lib/net6.0/K4os.Compression.LZ4.dll": {
+            "assemblyVersion": "1.3.8.0",
+            "fileVersion": "1.3.8.0"
+          }
+        }
+      },
+      "SharpZipLib/1.4.2": {
+        "runtime": {
+          "lib/net6.0/ICSharpCode.SharpZipLib.dll": {
+            "assemblyVersion": "1.4.2.13",
+            "fileVersion": "1.4.2.13"
+          }
+        }
+      },
+      "System.Memory/4.5.3": {},
+      "ZstdSharp.Port/0.8.7": {
+        "runtime": {
+          "lib/net6.0/ZstdSharp.dll": {
+            "assemblyVersion": "0.8.7.0",
+            "fileVersion": "0.8.7.0"
+          }
+        }
+      },
+      "SignalSystem.Contracts/1.0.0": {
+        "runtime": {
+          "SignalSystem.Contracts.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SignalSystem.Processing.Abstractions/1.0.0": {
+        "dependencies": {
+          "SignalSystem.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "SignalSystem.Processing.Abstractions.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SignalSystem.Processing.Impl/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "IronSnappy/1.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-lOI1vn5xbF169G7Lo5i9cQGvYE6sCMwyNsONfAKQ1FtKqteLLcnlbSAhk+UFmol3lAEJyrCW4tglA8OkLKUNww==",
+      "path": "ironsnappy/1.3.1",
+      "hashPath": "ironsnappy.1.3.1.nupkg.sha512"
+    },
+    "K4os.Compression.LZ4/1.3.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LhwlPa7c1zs1OV2XadMtAWdImjLIsqFJPoRcIWAadSRn0Ri1DepK65UbWLPmt4riLqx2d40xjXRk0ogpqNtK7g==",
+      "path": "k4os.compression.lz4/1.3.8",
+      "hashPath": "k4os.compression.lz4.1.3.8.nupkg.sha512"
+    },
+    "SharpZipLib/1.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yjj+3zgz8zgXpiiC3ZdF/iyTBbz2fFvMxZFEBPUcwZjIvXOf37Ylm+K58hqMfIBt5JgU/Z2uoUS67JmTLe973A==",
+      "path": "sharpziplib/1.4.2",
+      "hashPath": "sharpziplib.1.4.2.nupkg.sha512"
+    },
+    "System.Memory/4.5.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3oDzvc/zzetpTKWMShs1AADwZjQ/36HnsufHRPcOjyRAAMLDlu2iD33MBI2opxnezcVUtXyqDXXjoFMOU9c7SA==",
+      "path": "system.memory/4.5.3",
+      "hashPath": "system.memory.4.5.3.nupkg.sha512"
+    },
+    "ZstdSharp.Port/0.8.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+4VpxvzEKaHpfTjsLRMhQHx6brqGBkIA+fjUM3wUW8ZoWpPFAeKrO2Nf4uZDeBjjzNDNxSRvLQH4b3S9Ku4JJQ==",
+      "path": "zstdsharp.port/0.8.7",
+      "hashPath": "zstdsharp.port.0.8.7.nupkg.sha512"
+    },
+    "SignalSystem.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SignalSystem.Processing.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -435,7 +435,7 @@ public partial class SignalProcessingViewModel : ViewModelBase
     /// <summary>
     /// .sdf 压缩文件魔术字节 "SDFC"
     /// </summary>
-    private static readonly byte[] SdfcMagic = "SDFC"u8.ToArray();
+    private static readonly byte[] SdfcMagic = System.Text.Encoding.ASCII.GetBytes("SDFC");
 
     /// <summary>
     /// 将缓存帧保存到 .sdf 文件（压缩格式）

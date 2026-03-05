@@ -16,7 +16,7 @@ namespace SignalSystem.UI.Helpers;
 public static class TdmsHelper
 {
     // TDMS Tag "TDSm" (little-endian)
-    private static readonly byte[] TdmsTag = "TDSm"u8.ToArray();
+    private static readonly byte[] TdmsTag = System.Text.Encoding.ASCII.GetBytes("TDSm");
 
     // ToC mask bits
     private const uint kTocMetaData = 1 << 1;

@@ -1,0 +1,16 @@
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\bin\Debug\net6.0\SignalSystem.SDK.Abstractions.deps.json
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\bin\Debug\net6.0\SignalSystem.SDK.Abstractions.dll
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\bin\Debug\net6.0\SignalSystem.SDK.Abstractions.pdb
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\bin\Debug\net6.0\SignalSystem.Contracts.dll
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\bin\Debug\net6.0\SignalSystem.Contracts.pdb
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\obj\Debug\net6.0\SignalSystem.SDK.Abstractions.csproj.AssemblyReference.cache
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\obj\Debug\net6.0\SignalSystem.SDK.Abstractions.GeneratedMSBuildEditorConfig.editorconfig
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\obj\Debug\net6.0\SignalSystem.SDK.Abstractions.AssemblyInfoInputs.cache
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\obj\Debug\net6.0\SignalSystem.SDK.Abstractions.AssemblyInfo.cs
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\obj\Debug\net6.0\SignalSystem.SDK.Abstractions.csproj.CoreCompileInputs.cache
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\obj\Debug\net6.0\SignalSystem.SDK.Abstractions.sourcelink.json
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\obj\Debug\net6.0\SignalSy.6C44B0F6.Up2Date
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\obj\Debug\net6.0\SignalSystem.SDK.Abstractions.dll
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\obj\Debug\net6.0\refint\SignalSystem.SDK.Abstractions.dll
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\obj\Debug\net6.0\SignalSystem.SDK.Abstractions.pdb
+D:\test\SignalSystem\src\SignalSystem.SDK.Abstractions\obj\Debug\net6.0\ref\SignalSystem.SDK.Abstractions.dll

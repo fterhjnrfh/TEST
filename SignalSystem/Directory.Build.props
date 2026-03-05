@@ -1,7 +1,7 @@
 <Project>
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <!-- 若需部署到 Win7，可改为 net6.0 并安装对应 SDK -->
+    <TargetFramework>net6.0</TargetFramework>
+    <!-- 使用 net6.0 以支持 Windows 7 部署 -->
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <LangVersion>latest</LangVersion>

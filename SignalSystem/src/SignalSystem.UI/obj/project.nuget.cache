@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "78K4+yEpO+0=",
+  "dgSpecHash": "u5tWRz3pR+8=",
   "success": true,
   "projectFilePath": "D:\\test\\SignalSystem\\src\\SignalSystem.UI\\SignalSystem.UI.csproj",
   "expectedPackageFiles": [
@@ -38,7 +38,10 @@
     "C:\\Users\\Destiny\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",
     "C:\\Users\\Destiny\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\Destiny\\.nuget\\packages\\tmds.dbus.protocol\\0.20.0\\tmds.dbus.protocol.0.20.0.nupkg.sha512",
-    "C:\\Users\\Destiny\\.nuget\\packages\\zstdsharp.port\\0.8.7\\zstdsharp.port.0.8.7.nupkg.sha512"
+    "C:\\Users\\Destiny\\.nuget\\packages\\zstdsharp.port\\0.8.7\\zstdsharp.port.0.8.7.nupkg.sha512",
+    "C:\\Users\\Destiny\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Destiny\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Destiny\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "28rgHFtmaqY=",
+  "dgSpecHash": "fG9WowvbxTI=",
   "success": true,
   "projectFilePath": "D:\\test\\SignalSystem\\src\\SignalSystem.Processing.Impl\\SignalSystem.Processing.Impl.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,10 @@
     "C:\\Users\\Destiny\\.nuget\\packages\\k4os.compression.lz4\\1.3.8\\k4os.compression.lz4.1.3.8.nupkg.sha512",
     "C:\\Users\\Destiny\\.nuget\\packages\\sharpziplib\\1.4.2\\sharpziplib.1.4.2.nupkg.sha512",
     "C:\\Users\\Destiny\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
-    "C:\\Users\\Destiny\\.nuget\\packages\\zstdsharp.port\\0.8.7\\zstdsharp.port.0.8.7.nupkg.sha512"
+    "C:\\Users\\Destiny\\.nuget\\packages\\zstdsharp.port\\0.8.7\\zstdsharp.port.0.8.7.nupkg.sha512",
+    "C:\\Users\\Destiny\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Destiny\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Destiny\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

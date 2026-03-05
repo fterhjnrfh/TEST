@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "SignalSystem.SDK.Abstractions/1.0.0": {
+        "dependencies": {
+          "SignalSystem.Contracts": "1.0.0"
+        },
+        "runtime": {
+          "SignalSystem.SDK.Abstractions.dll": {}
+        }
+      },
+      "SignalSystem.Contracts/1.0.0": {
+        "runtime": {
+          "SignalSystem.Contracts.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SignalSystem.SDK.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SignalSystem.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

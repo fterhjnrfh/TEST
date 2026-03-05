@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+No1B5JIJDw=",
+  "dgSpecHash": "7UjpOTQ9vto=",
   "success": true,
   "projectFilePath": "D:\\test\\SignalSystem\\src\\SignalSystem.Contracts\\SignalSystem.Contracts.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Destiny\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.36\\microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Destiny\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.36\\microsoft.windowsdesktop.app.ref.6.0.36.nupkg.sha512",
+    "C:\\Users\\Destiny\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.36\\microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
+  ],
   "logs": []
 }
