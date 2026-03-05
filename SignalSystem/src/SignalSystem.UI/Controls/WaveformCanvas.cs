@@ -188,11 +188,13 @@ public class WaveformCanvas : Control
 
         var plot = PlotArea;
         int maxS = MaxSamples > 0 ? MaxSamples : DisplayCount;
+        if (maxS < 1) maxS = 1;
         int oldCount = DisplayCount;
 
         double factor = delta > 0 ? 0.8 : 1.25;
         int newCount = (int)(oldCount * factor);
-        newCount = Math.Clamp(newCount, 50, maxS);
+        int minCount = Math.Min(50, maxS); // 保证 min <= max
+        newCount = Math.Clamp(newCount, minCount, maxS);
 
         // 以鼠标在绘图区的相对位置为锚点
         double mouseX = e.GetPosition(this).X - plot.Left;

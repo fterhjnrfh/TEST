@@ -14,6 +14,8 @@ using SignalSystem.Contracts.Models;
 using SignalSystem.Processing.Abstractions;
 using SignalSystem.Processing.Impl;
 using SignalSystem.Processing.Impl.Compressors;
+using SignalSystem.UI.Helpers;
+using SignalSystem.UI.Models;
 
 namespace SignalSystem.UI.ViewModels;
 
@@ -189,9 +191,15 @@ public partial class SignalProcessingViewModel : ViewModelBase
     // ---- 处理日志 ----
     public ObservableCollection<string> ProcessingLog { get; } = new();
 
-    // ---- 保存路径 ----
+    // ---- 保存路径 & 格式 ----
     [ObservableProperty]
     private string _saveFolderPath;
+
+    [ObservableProperty]
+    private SaveFileFormat _selectedSaveFormat = SaveFileFormat.SDF;
+
+    public SaveFileFormat[] AvailableSaveFormats { get; } =
+        Enum.GetValues<SaveFileFormat>();
 
     // ---- 命令 ----
     [RelayCommand]
@@ -280,15 +288,108 @@ public partial class SignalProcessingViewModel : ViewModelBase
     }
 
     [RelayCommand]
-    private void SaveProfile()
+    private async Task SaveProfile()
     {
-        AddLog($"保存配置: {SelectedPreprocess} + {SelectedAlgorithm}");
+        try
+        {
+            var topLevel = TopLevel.GetTopLevel(
+                Avalonia.Application.Current?.ApplicationLifetime is
+                    Avalonia.Controls.ApplicationLifetimes.IClassicDesktopStyleApplicationLifetime dt
+                    ? dt.MainWindow : null);
+            if (topLevel == null) return;
+
+            var file = await topLevel.StorageProvider.SaveFilePickerAsync(
+                new Avalonia.Platform.Storage.FilePickerSaveOptions
+                {
+                    Title = "保存处理配置",
+                    SuggestedFileName = "profile",
+                    DefaultExtension = "json",
+                    FileTypeChoices = new[]
+                    {
+                        new Avalonia.Platform.Storage.FilePickerFileType("JSON 配置文件")
+                            { Patterns = new[] { "*.json" } },
+                    },
+                });
+            if (file == null) return;
+
+            var profile = new ProcessingProfile
+            {
+                PreprocessMethod = SelectedPreprocess.ToString(),
+                LpcOrder = LpcOrder,
+                CompressionAlgorithm = SelectedAlgorithm.ToString(),
+                CompressionLevel = CompressionLevel,
+                WindowSize = WindowSize,
+                SaveFileFormat = SelectedSaveFormat.ToString(),
+                SaveFolderPath = SaveFolderPath,
+                EnableVerification = EnableVerification,
+            };
+
+            var json = JsonSerializer.Serialize(profile, new JsonSerializerOptions { WriteIndented = true });
+            var path = file.Path.LocalPath;
+            await File.WriteAllTextAsync(path, json);
+            AddLog($"配置已保存: {path}");
+        }
+        catch (Exception ex)
+        {
+            AddLog($"保存配置失败: {ex.Message}");
+        }
     }
 
     [RelayCommand]
-    private void LoadProfile()
+    private async Task LoadProfile()
     {
-        AddLog("加载配置");
+        try
+        {
+            var topLevel = TopLevel.GetTopLevel(
+                Avalonia.Application.Current?.ApplicationLifetime is
+                    Avalonia.Controls.ApplicationLifetimes.IClassicDesktopStyleApplicationLifetime dt
+                    ? dt.MainWindow : null);
+            if (topLevel == null) return;
+
+            var files = await topLevel.StorageProvider.OpenFilePickerAsync(
+                new Avalonia.Platform.Storage.FilePickerOpenOptions
+                {
+                    Title = "加载处理配置",
+                    AllowMultiple = false,
+                    FileTypeFilter = new[]
+                    {
+                        new Avalonia.Platform.Storage.FilePickerFileType("JSON 配置文件")
+                            { Patterns = new[] { "*.json" } },
+                        new Avalonia.Platform.Storage.FilePickerFileType("所有文件")
+                            { Patterns = new[] { "*.*" } },
+                    },
+                });
+            if (files.Count == 0) return;
+
+            var path = files[0].Path.LocalPath;
+            var json = await File.ReadAllTextAsync(path);
+            var profile = JsonSerializer.Deserialize<ProcessingProfile>(json);
+            if (profile == null)
+            {
+                AddLog("配置文件解析失败");
+                return;
+            }
+
+            // 应用配置
+            if (Enum.TryParse<PreprocessMethod>(profile.PreprocessMethod, out var pm))
+                SelectedPreprocess = pm;
+            LpcOrder = profile.LpcOrder;
+            if (Enum.TryParse<CompressionAlgorithm>(profile.CompressionAlgorithm, out var ca))
+                SelectedAlgorithm = ca;
+            CompressionLevel = profile.CompressionLevel;
+            WindowSize = profile.WindowSize;
+            if (Enum.TryParse<SaveFileFormat>(profile.SaveFileFormat, out var sf))
+                SelectedSaveFormat = sf;
+            if (!string.IsNullOrWhiteSpace(profile.SaveFolderPath))
+                SaveFolderPath = profile.SaveFolderPath;
+            EnableVerification = profile.EnableVerification;
+
+            AddLog($"配置已加载: {path}");
+        }
+        catch (Exception ex)
+        {
+            AddLog($"加载配置失败: {ex.Message}");
+        }
     }
 
     /// <summary>
@@ -352,7 +453,8 @@ public partial class SignalProcessingViewModel : ViewModelBase
         try
         {
             Directory.CreateDirectory(SaveFolderPath);
-            var fileName = $"signal_{DateTime.Now:yyyyMMdd_HHmmss}.sdf";
+            var ext = SelectedSaveFormat == SaveFileFormat.TDMS ? ".tdms" : ".sdf";
+            var fileName = $"signal_{DateTime.Now:yyyyMMdd_HHmmss}{ext}";
             var filePath = Path.Combine(SaveFolderPath, fileName);
 
             // 按设备 → 通道组织数据
@@ -392,38 +494,48 @@ public partial class SignalProcessingViewModel : ViewModelBase
                     .ToList(),
             };
 
-            var json = JsonSerializer.Serialize(fileData, new JsonSerializerOptions { WriteIndented = false });
-            var jsonBytes = Encoding.UTF8.GetBytes(json);
-
-            if (SelectedAlgorithm == CompressionAlgorithm.None)
+            if (SelectedSaveFormat == SaveFileFormat.TDMS)
             {
-                // 不压缩 —— 直接写纯 JSON
-                await File.WriteAllBytesAsync(filePath, jsonBytes);
-                AddLog($"数据已保存(无压缩): {filePath} ({frames.Length} 帧, {jsonBytes.Length:N0} 字节)");
+                // ---- TDMS 格式 ----
+                await TdmsHelper.WriteAsync(filePath, fileData);
+                AddLog($"数据已保存(TDMS): {filePath} ({frames.Length} 帧)");
             }
             else
             {
-                // 使用选定算法压缩
-                var compressor = CompressorFactory.Create(SelectedAlgorithm);
-                var compressedBytes = compressor.Compress(jsonBytes, new CompressionOptions
+                // ---- SDF 格式 ----
+                var json = JsonSerializer.Serialize(fileData, new JsonSerializerOptions { WriteIndented = false });
+                var jsonBytes = Encoding.UTF8.GetBytes(json);
+
+                if (SelectedAlgorithm == CompressionAlgorithm.None)
                 {
-                    Algorithm = SelectedAlgorithm,
-                    Level = CompressionLevel,
-                    WindowSize = WindowSize,
-                });
+                    // 不压缩 —— 直接写纯 JSON
+                    await File.WriteAllBytesAsync(filePath, jsonBytes);
+                    AddLog($"数据已保存(无压缩): {filePath} ({frames.Length} 帧, {jsonBytes.Length:N0} 字节)");
+                }
+                else
+                {
+                    // 使用选定算法压缩
+                    var compressor = CompressorFactory.Create(SelectedAlgorithm);
+                    var compressedBytes = compressor.Compress(jsonBytes, new CompressionOptions
+                    {
+                        Algorithm = SelectedAlgorithm,
+                        Level = CompressionLevel,
+                        WindowSize = WindowSize,
+                    });
 
-                // 写入: [SDFC][算法][原始长度][压缩数据]
-                using var fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None);
-                await fs.WriteAsync(SdfcMagic);
-                fs.WriteByte((byte)SelectedAlgorithm);
-                var lenBytes = BitConverter.GetBytes(jsonBytes.Length);
-                await fs.WriteAsync(lenBytes);
-                await fs.WriteAsync(compressedBytes);
+                    // 写入: [SDFC][算法][原始长度][压缩数据]
+                    using var fs = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.None);
+                    await fs.WriteAsync(SdfcMagic);
+                    fs.WriteByte((byte)SelectedAlgorithm);
+                    var lenBytes = BitConverter.GetBytes(jsonBytes.Length);
+                    await fs.WriteAsync(lenBytes);
+                    await fs.WriteAsync(compressedBytes);
 
-                double ratio = jsonBytes.Length > 0 ? (double)jsonBytes.Length / compressedBytes.Length : 0;
-                AddLog($"数据已保存({SelectedAlgorithm}): {filePath} ({frames.Length} 帧, " +
-                       $"原始 {jsonBytes.Length:N0} → 压缩 {compressedBytes.Length:N0} 字节, " +
-                       $"压缩比 {ratio:F2}x)");
+                    double ratio = jsonBytes.Length > 0 ? (double)jsonBytes.Length / compressedBytes.Length : 0;
+                    AddLog($"数据已保存({SelectedAlgorithm}): {filePath} ({frames.Length} 帧, " +
+                           $"原始 {jsonBytes.Length:N0} → 压缩 {compressedBytes.Length:N0} 字节, " +
+                           $"压缩比 {ratio:F2}x)");
+                }
             }
 
             LastSavedFilePath = filePath;

@@ -1,0 +1,10 @@
+{
+  "PreprocessMethod": "None",
+  "LpcOrder": 4,
+  "CompressionAlgorithm": "None",
+  "CompressionLevel": 3,
+  "WindowSize": 0,
+  "SaveFileFormat": "TDMS",
+  "SaveFolderPath": "D:\\test\\data\\",
+  "EnableVerification": true
+}

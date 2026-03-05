@@ -11,6 +11,7 @@ using CommunityToolkit.Mvvm.Input;
 using SignalSystem.Contracts.Enums;
 using SignalSystem.Contracts.Models;
 using SignalSystem.Processing.Impl.Compressors;
+using SignalSystem.UI.Helpers;
 
 namespace SignalSystem.UI.ViewModels;
 
@@ -105,7 +106,9 @@ public partial class DataViewerViewModel : ViewModelBase
             AllowMultiple = false,
             FileTypeFilter = new[]
             {
-                new FilePickerFileType("信号数据文件") { Patterns = new[] { "*.sdf" } },
+                new FilePickerFileType("信号数据文件") { Patterns = new[] { "*.sdf", "*.tdms" } },
+                new FilePickerFileType("SDF 文件") { Patterns = new[] { "*.sdf" } },
+                new FilePickerFileType("TDMS 文件") { Patterns = new[] { "*.tdms" } },
                 new FilePickerFileType("所有文件") { Patterns = new[] { "*.*" } },
             },
         });
@@ -123,33 +126,46 @@ public partial class DataViewerViewModel : ViewModelBase
     {
         try
         {
-            var raw = await File.ReadAllBytesAsync(path);
-            string json;
             string compressionInfo = "无压缩";
 
-            // 检测是否为 SDFC 压缩格式: [4B "SDFC"][1B algorithm][4B origLen][data...]
-            if (raw.Length >= 9 &&
-                raw[0] == (byte)'S' && raw[1] == (byte)'D' &&
-                raw[2] == (byte)'F' && raw[3] == (byte)'C')
+            // 检测文件格式
+            if (path.EndsWith(".tdms", StringComparison.OrdinalIgnoreCase))
             {
-                var algorithm = (CompressionAlgorithm)raw[4];
-                int originalLen = BitConverter.ToInt32(raw, 5);
-                var compressedData = raw.AsSpan(9).ToArray();
-
-                var compressor = CompressorFactory.Create(algorithm);
-                var decompressed = compressor.Decompress(compressedData,
-                    new Contracts.Configuration.CompressionOptions { Algorithm = algorithm });
-                json = Encoding.UTF8.GetString(decompressed);
-                double ratio = compressedData.Length > 0 ? (double)originalLen / compressedData.Length : 0;
-                compressionInfo = $"{algorithm} (压缩比 {ratio:F2}x)";
+                // ---- TDMS 格式 ----
+                _dataFile = await TdmsHelper.ReadAsync(path);
+                compressionInfo = "TDMS 二进制";
             }
             else
             {
-                // 纯 JSON 格式（向后兼容）
-                json = Encoding.UTF8.GetString(raw);
+                // ---- SDF 格式 ----
+                var raw = await File.ReadAllBytesAsync(path);
+                string json;
+
+                // 检测是否为 SDFC 压缩格式: [4B "SDFC"][1B algorithm][4B origLen][data...]
+                if (raw.Length >= 9 &&
+                    raw[0] == (byte)'S' && raw[1] == (byte)'D' &&
+                    raw[2] == (byte)'F' && raw[3] == (byte)'C')
+                {
+                    var algorithm = (CompressionAlgorithm)raw[4];
+                    int originalLen = BitConverter.ToInt32(raw, 5);
+                    var compressedData = raw.AsSpan(9).ToArray();
+
+                    var compressor = CompressorFactory.Create(algorithm);
+                    var decompressed = compressor.Decompress(compressedData,
+                        new Contracts.Configuration.CompressionOptions { Algorithm = algorithm });
+                    json = Encoding.UTF8.GetString(decompressed);
+                    double ratio = compressedData.Length > 0 ? (double)originalLen / compressedData.Length : 0;
+                    compressionInfo = $"{algorithm} (压缩比 {ratio:F2}x)";
+                }
+                else
+                {
+                    // 纯 JSON 格式（向后兼容）
+                    json = Encoding.UTF8.GetString(raw);
+                }
+
+                _dataFile = JsonSerializer.Deserialize<SignalDataFile>(json);
             }
 
-            _dataFile = JsonSerializer.Deserialize<SignalDataFile>(json);
             if (_dataFile == null)
             {
                 FileInfo = "文件解析失败";
